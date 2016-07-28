@@ -1,0 +1,19 @@
+I will run you code here with these example strategies. Here are the brief info about these examples.
+
+TRIGGER:
+	start with C;
+	D forever if another player use D
+	
+DTRIGGER:
+	start with C;
+	D forever if another player use two Ds continuously
+
+TTA:
+	start with C;
+	then copy another player's previous round
+
+C:
+	C forever
+
+D:
+	D forever

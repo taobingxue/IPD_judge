@@ -127,7 +127,20 @@ int main(int argc, char** argv) {
 
     // output & release
     for (int i = 0; i < l; ++i) {
-        printf("%10d%30s%15.5lf\n", i + 1, player[i].name, player[i].a_score);
+/*		
+  <tr>
+    <td align="middle">2</td>
+    <td align="middle">EXAMPLE-DTRIGGER.txt</td>
+    <td align="middle">184.94167</td>
+    <td align="middle">00:00 July 27</td>
+  </tr>
+*/
+		
+        printf("  <tr>\n    <td align=\"middle\">%d</td>\n", i+1);
+		printf("    <td align=\"middle\">%s</td>\n", player[i].name);
+		printf("    <td align=\"middle\">%lf</td>\n", player[i].a_score);
+		printf("    <td align=\"middle\">00:00 July 27</td>\n  </tr>\n");
+
         delete(player[i].state_machine);
     }
 
