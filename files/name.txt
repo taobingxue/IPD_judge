@@ -1,13 +1,50 @@
 EXAMPLE-C.txt
+00:00 July 27
 EXAMPLE-D.txt
+00:00 July 27
 EXAMPLE-TRIGGER.txt
+00:00 July 27
 EXAMPLE-DTRIGGER.txt
+00:00 July 27
 EXAMPLE-TTA.txt
+00:00 July 27
 Andrew_Rocchi.txt
+20:17 July 27
 Cameron_Kennedy.txt
+23:13 July 27
 Daniel_Wang.txt
+21:09 July 27
 Jing_Shi.txt
+23:57 July 27
 Kieran_Walsh.txt
+00:23 July 28
 Peter_Kang.txt
+00:09 July 28
 Yilin_Shi.txt
+23:23 July 27
 Yuxuan_(Michael)_Chen.txt
+22:33 July 27
+Urbain_Racine_Alexis.txt
+00:00 July 27
+Martin_Daniel.txt
+00:00 July 27
+Oliner_Charles.txt
+00:00 July 27
+Teng_James.txt
+00:00 July 27
+Garbus_Jack.txt
+00:00 July 27
+Chen_Chen_Juan(David).txt
+00:00 July 27
+Blohm_Robert.txt
+00:00 July 27
+Rocchi_Andrew.txt
+00:00 July 27
+Ucho_Steve.txt
+00:00 July 27
+Cheng_Joseph_Sing_Leu.txt
+00:00 July 27
+Shanmugasundaram_Kesavan.txt
+00:00 July 27
+Qiu_Robert.txt
+00:00 July 27

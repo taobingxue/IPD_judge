@@ -19,9 +19,7 @@ bool StateMachine::init(char* path, char *file_name) {
     // file open
     FILE *fp = fopen(pathall, "r");
     if (!fp) {
-        fprintf(fp, "Failed open file ");
-        fputs(file_name, fp);
-        fprintf(fp, "\n");
+        printf("Failed open file %s.\n", file_name);
         return false; 
     }
 
@@ -32,9 +30,7 @@ bool StateMachine::init(char* path, char *file_name) {
     while (fscanf(fp, "%c", &ch) != EOF) {
         // if state id valid
         if (ch != '0' + size) {
-           fprintf(fp, "wrong state id in line %d from file ", size)  ;
-           fputs(file_name, fp);
-           fprintf(fp, "\n");
+           printf("wrong state id in line %d from file %s\n", size, file_name);
            return false;
         }
 
@@ -44,9 +40,7 @@ bool StateMachine::init(char* path, char *file_name) {
                                               &(states[size].ptr[1]),
                                               &(states[size].ptr[2]),
                                               &(states[size].ptr[3]))) {
-            fprintf(fp, "wrong format in line %d from file ", size);
-            fputs(file_name, fp);
-            fprintf(fp, "\n");
+            printf("wrong format in line %d from file %s.\n", size, file_name);
             return false;
         }
         fgets(rest, 10, fp);
@@ -54,9 +48,7 @@ bool StateMachine::init(char* path, char *file_name) {
         // count size
         ++size;
         if (size >= 10) {
-            fprintf(fp, "too many states in file ");
-            fputs(file_name, fp);
-            fprintf(fp, "\n");
+            printf("too many states in file %s.\n", file_name);
             return false;
         }
     }
@@ -66,9 +58,7 @@ bool StateMachine::init(char* path, char *file_name) {
         for (int j = 0; j < 4; ++j) {
             // id check
             if (states[i].ptr[j] < 0 || states[i].ptr[j] >= size) {
-                fprintf(fp, "wrong succeed state id from line %d, in file ", i);
-                fputs(file_name, fp);
-                fprintf(fp, "\n");
+                printf("wrong succeed state id from line %d, in file %s\n", i, file_name);
                 return false;
             }
         }
